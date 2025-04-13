@@ -64,10 +64,3 @@ The `main.py` script automates the core data collection and processing steps.
         python brand_price_analysis.py
         ```
     *   **Usage:** The script will process the data and display two bar charts comparing prices and product counts. You can configure the number of top categories (`TOP_N_SUBCATEGORIES`) and the target main category (`TARGET_MAIN_CATEGORY_PREFIX`) inside the script itself.
-
-## Troubleshooting
-
-*   **Script Not Found Errors:** Ensure all `.py` files are in the same directory where you are running the commands.
-*   **Scraper Errors:** Check the `main_run_*.log` file and any output from `scraper_makro.py`. Errors might be due to network issues, changes in the Makro website/API, or incorrect configuration in `config.ini`.
-*   **Permission Errors:** Ensure you have write permissions in the directory where the script is creating folders (`jsonl_output`, `results`).
-*   **Encoding Issues (CSV):** If characters appear garbled in Excel, ensure `json_to_csv.py` uses `encoding='utf-8-sig'` when writing the CSV.
